@@ -36,3 +36,37 @@ console.log(updatedShoppingList);
 
 let findTheLastIndexOfPop = updatedShoppingList.lastIndexOf('Pop');
 console.log(findTheLastIndexOfPop);
+
+//practice 3.4
+
+let myCar = {
+    make: 2023,
+    model: 'advanced',
+    type: 'SUV',
+    autonomous: false,
+    colour: 'black',
+}
+
+let prop2access = 'colour';
+
+myCar[prop2access] = 'white';
+myCar.forSale = false;
+
+console.log(myCar['model'], myCar['make'])
+
+console.log(myCar)
+
+myCompany = {
+    name: 'tdcx',
+    address: {
+        state: 'kl',
+        postcode: 43900,
+        number: 13,
+        recepient: {
+            name: ['Myself', 'Shad', 'Raisa', 'Blomma'],
+            age: 20
+        }
+    }
+}
+
+console.log(myCompany.address.recepient.name[1])
