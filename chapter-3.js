@@ -90,3 +90,41 @@ people.friends.push(var1, var2, var3);
 console.log(people.friends);
 
 console.log(people.friends[0].lastName);
+
+// shads practice 
+let parmansHome = {
+    address: {
+        streetName: 'taman seroja',
+        houseNo: 22
+    },
+    livingRoom: {
+        numberOfSofas: 3,
+        areas: ['sofa', 'dining table']
+    },
+    inhabitants: [
+        {
+            name: 'Anis',
+            age: 31,
+            daughters: []
+        },
+        {
+            name: 'Tin',
+            age: 31,
+            daughters: [,
+                {
+                    name: 'Ayla',
+                    age: 1
+                }
+            ]
+        }
+    ]
+};
+
+// output 'dining table' to console
+console.log(parmansHome.livingRoom.areas[1]);
+
+// output ayla's age (1) to console
+console.log(parmansHome.inhabitants[1].daughters[1].age);
+
+// bonus: output the number of inhabitants to console
+console.log(parmansHome.inhabitants.length);
