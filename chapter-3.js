@@ -70,3 +70,22 @@ myCompany = {
 }
 
 console.log(myCompany.address.recepient.name[1])
+
+//practice 3.5
+
+let people = {
+    friends: []
+};
+let var1 = {
+    friendsFirstName: 'Mira', lastName: 'Parman', id: 5734
+};
+let var2 = {
+    friendsFirstName: 'Shad', lastName: 'Ahmad', id: 5544
+};
+let var3 = {
+    friendsFirstName: 'Ayla', lastName: 'Raisa', id: 7722
+};
+people.friends.push(var1, var2, var3);
+console.log(people.friends)
+
+
