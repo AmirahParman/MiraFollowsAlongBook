@@ -86,6 +86,7 @@ let var3 = {
     friendsFirstName: 'Ayla', lastName: 'Raisa', id: 7722
 };
 people.friends.push(var1, var2, var3);
-console.log(people.friends)
 
+console.log(people.friends);
 
+console.log(people.friends[0].lastName);
