@@ -130,5 +130,7 @@ console.log(parmansHome.inhabitants[1].daughters[1].age);
 console.log(parmansHome.inhabitants.length);
 
 //add to inhabitant
-parmansHome.inhabitants.push({ name: 'Ibu', age: 50, daughters: [] });
+
+parmansHome.inhabitants.push({name: 'ibu', age: 50, daughters:[]});
+
 console.log(parmansHome);
