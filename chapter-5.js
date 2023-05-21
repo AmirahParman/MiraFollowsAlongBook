@@ -17,7 +17,7 @@ while (!isGuessedCorrectly) {
     }
     else if (usersGuess == solution) {
         console.log('You guessed it right!');
-        isGuessedCorrecty = true;
+        isGuessedCorrectly = true;
     }
 }
 
@@ -41,15 +41,18 @@ let worksAtAmpangHospital = true;
 let hasAKidCalledAyla = true;
 let studiedMedSchoolIn = 'Makassar';
 let marriedTo = 'bigo';
-let cursedUs = true;
+let cursedUs = false;
 
 // write an if condition for when the person has not cursed us, aged between 30 and 35, worked at ampang hospital
 // has a kid called ayla, and studied in either makassar or bali.
-if (
+while (
     (age >= 30 && age <= 35)
     && hasAKidCalledAyla
     && (studiedMedSchoolIn == 'Makassar' || studiedMedSchoolIn == 'Bali')
     && marriedTo == 'bigo'
     && !cursedUs) {
+
     console.log('Youre the best');
+
+    cursedUs = true;
 }
