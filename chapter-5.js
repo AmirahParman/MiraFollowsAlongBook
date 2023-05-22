@@ -106,15 +106,26 @@ You are not allowed to modify the variable myFriends.
 
 const myFriends = ['faiz mustaza', 'tiara', 'khana', 'banana leaf', 'ridh'];
 
+for (let i = 0; i < myFriends.length; i++) {
+    console.log(myFriends[i]);
+    if (myFriends[i] == 'banana leaf') {
+        console.log('yum!');
+    }
+}
 
 
 /* Practice scenario 3
 Create a loop that will output ****, 
-the number of * is depending on the const astr below
-
-For example, if astr = 7, then the console output should be:
+the number of * is depending on the const noOfAstrisks below
+ 
+For example, if noOfAstrisks = 7, then the console output should be:
     *******
-
+ 
 */
-const astr = 7;
+const noOfAsterisks = 7;
+let asterisks = '';
 
+for (let i = 0; i < noOfAsterisks; i++) {
+    asterisks += '*';
+}
+console.log(asterisks);
