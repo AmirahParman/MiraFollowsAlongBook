@@ -130,3 +130,109 @@ for (let i = 0; i < noOfAsterisks; i++) {
 }
 console.log(asterisks);
 
+/* Practice scenario 4
+
+Create a loop that will output the friendsList below, but with numbers in front of it. 
+And make every names uppercase.
+
+Like this:
+
+1. TIN
+2. BIGO
+3. SHAKIRAH
+4. RIDH
+...
+etc
+
+p.s. To uppercase use .toUpperCase() on the string you want to uppercase
+
+*/
+
+const friendsList = ['tin', 'bigo', 'shakirah', 'ridh', 'ayoh', 'mok', 'lina'];
+let counter = 1
+
+for (let i = 0; i < friendsList.length; i++) {
+    let list = (counter + '. ' + friendsList[i]);
+    console.log(list.toUpperCase(i));
+    counter = counter + 1;
+}
+
+for (let i = 0; i < friendsList.length; i++) {
+    let list = ((i + 1) + '. ' + friendsList[i]);
+    console.log(list.toUpperCase(i));
+}
+
+
+/* Practice scenario 6
+
+Use a loop to print a list of numbers in increments of 15
+starting at 30, ending at 330
+
+*/
+
+for (i = 30; i <= 330; i += 15) {
+    console.log(i)
+}
+
+/* Practice scenario 7
+
+Using the const asteriskAndDollarsNo below, print alternately * and $ 
+
+Example, if asteriskAndDollarsNo == 5, we print:
+*$*$*
+
+if asteriskAndDollarsNo == 8 we print:
+*$*$*$*$
+
+*/
+
+const asteriskAndDollarsNo = 13;
+const asterisk = '*';
+const dollarSign = '$';
+let finalOutcome = '';
+
+for (i = 0; i < asteriskAndDollarsNo; i++) {
+    if (i % 2 !== 0) {
+        finalOutcome += dollarSign;
+    } else {
+        finalOutcome += asterisk;
+    };
+}
+console.log(finalOutcome);
+
+
+/* Practice scenario 8
+ 
+create ourFriendsList via a loop, we need 10 friends, with names Friend 1, Friend 2, Friend 3... etc
+and they also have an age. Starting with 15, and increment by 2 every time.
+ 
+so ourFriendslist will look something like this
+ 
+name: Friend 1
+age: 15
+ 
+name: Friend 2
+age: 17
+ 
+name: Friend 3
+age: 19
+ 
+etc
+ 
+*/
+
+let ourFriendslist = [];
+
+/* Practice scenario 9
+ 
+with the two arrays below, match the names of ibusHouseResidents and jobs, in an interpolated string like so:
+ 
+bigo is an architect
+anis is a student
+...
+etc
+ 
+*/
+
+const ibusHouseResidents = ['bigo', 'tin', 'anis', 'ayla', 'abah', 'ibu'];
+const theirJobs = ['architect', 'doctor', 'student', 'baby', 'lecturer', 'housewife'];
