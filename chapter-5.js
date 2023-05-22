@@ -129,3 +129,4 @@ for (let i = 0; i < noOfAsterisks; i++) {
     asterisks += '*';
 }
 console.log(asterisks);
+
