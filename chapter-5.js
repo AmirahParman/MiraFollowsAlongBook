@@ -253,3 +253,45 @@ for (let i = 0; i < ibusHouseResidents.length; i++) {
     console.log(`${ibusHouseResidents[i]} is a ${theirJobs[i]}`)
 
 }
+
+//Practice scenario 10
+const customerOrders = [{
+    item: 'burger',
+    quantity: 2,
+    costPerUnit: 100
+},
+{
+    item: 'pizza',
+    quantity: 1,
+    costPerUnit: 120
+},
+{
+    item: 'salad',
+    quantity: 3,
+    costPerUnit: 80
+},
+{
+    item: 'fries',
+    quantity: 4,
+    costPerUnit: 40
+},
+{
+    item: 'soda',
+    quantity: 2,
+    costPerUnit: 20
+},
+{
+    item: 'ice cream',
+    quantity: 1,
+    costPerUnit: 50
+}
+];
+
+let totalCustomerOrder = 0;
+
+for (let i = 0; i < customerOrders.length; i++) {
+    let calculatedCost = customerOrders[i].quantity * customerOrders[i].costPerUnit;
+    totalCustomerOrder += calculatedCost;
+}
+
+console.log('Total customer order', totalCustomerOrder)
