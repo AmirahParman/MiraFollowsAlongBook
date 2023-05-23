@@ -148,19 +148,19 @@ p.s. To uppercase use .toUpperCase() on the string you want to uppercase
 
 */
 
-const friendsList = ['tin', 'bigo', 'shakirah', 'ridh', 'ayoh', 'mok', 'lina'];
-let counter = 1
+// const friendsList = ['tin', 'bigo', 'shakirah', 'ridh', 'ayoh', 'mok', 'lina'];
+// let counter = 1
 
-for (let i = 0; i < friendsList.length; i++) {
-    let list = (counter + '. ' + friendsList[i]);
-    console.log(list.toUpperCase(i));
-    counter = counter + 1;
-}
+// for (let i = 0; i < friendsList.length; i++) {
+//     let list = (counter + '. ' + friendsList[i]);
+//     console.log(list.toUpperCase(i));
+//     counter = counter + 1;
+// }
 
-for (let i = 0; i < friendsList.length; i++) {
-    let list = ((i + 1) + '. ' + friendsList[i]);
-    console.log(list.toUpperCase(i));
-}
+// for (let i = 0; i < friendsList.length; i++) {
+//     let list = ((i + 1) + '. ' + friendsList[i]);
+//     console.log(list.toUpperCase(i));
+// }
 
 
 /* Practice scenario 6
@@ -222,6 +222,18 @@ etc
 */
 
 let ourFriendslist = [];
+let theirAge = 15
+
+for (let i = 1; i < 12; i++) {
+    ourFriendslist.push({
+        name: 'Friend ' + i,
+        age: 'age ' + theirAge
+    });
+    theirAge += 2
+}
+
+console.log(ourFriendslist)
+
 
 /* Practice scenario 9
  
