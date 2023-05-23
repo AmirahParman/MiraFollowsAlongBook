@@ -248,3 +248,8 @@ etc
 
 const ibusHouseResidents = ['bigo', 'tin', 'anis', 'ayla', 'abah', 'ibu'];
 const theirJobs = ['architect', 'doctor', 'student', 'baby', 'lecturer', 'housewife'];
+
+for (let i = 0; i < ibusHouseResidents.length; i++) {
+    console.log(`${ibusHouseResidents[i]} is a ${theirJobs[i]}`)
+
+}
