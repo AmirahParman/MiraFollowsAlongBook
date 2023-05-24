@@ -314,10 +314,14 @@ for (let i = 0; i < rows; i++) {
 
 console.table(myTable);
 
-//Practice 5.4.1 Github
+/*Practice scenario 11
+You are given an array of numbers. 
+Write a loop that takes each number from the original array, squares it, and then appends it to a new array.*/
+
 const originalArray = [2, 4, 6, 8, 10];
 const squaredArray = [];
 
-// Write your loop here
-
+for (let i = 0; i < originalArray.length; i++) {
+    squaredArray.push(originalArray[i] * originalArray[i]);
+}
 console.log(squaredArray);
