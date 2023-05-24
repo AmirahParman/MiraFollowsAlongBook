@@ -295,3 +295,29 @@ for (let i = 0; i < customerOrders.length; i++) {
 }
 
 console.log('Total customer order', totalCustomerOrder)
+
+//Practice 5.4
+
+let myTable = [];
+let rows = 8;
+let column = 5;
+let counter = 0;
+
+for (let i = 0; i < rows; i++) {
+    let tempTable = [];
+    for (let j = 0; j < column; j++) {
+        counter++;
+        tempTable.push(`dog no ${counter}`);
+    }
+    myTable.push(tempTable);
+}
+
+console.table(myTable);
+
+//Practice 5.4.1 Github
+const originalArray = [2, 4, 6, 8, 10];
+const squaredArray = [];
+
+// Write your loop here
+
+console.log(squaredArray);
