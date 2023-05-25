@@ -325,3 +325,146 @@ for (let i = 0; i < originalArray.length; i++) {
     squaredArray.push(originalArray[i] * originalArray[i]);
 }
 console.log(squaredArray);
+
+/* Practice scenario 12: 
+Tournament of friends
+
+Make all of your friends fight eachother
+They cannot fight themselves
+Random score between them
+
+const friendsList = ['ali', 'tin', 'mot', 'sik', 'kil'];
+
+expected output:
+
+|     | ali | tin | mot | sik | kil |
+| ali | n/a | 2-2 | 0-0 | 2-2 | 1-1 | 
+| tin | 1-0 | n/a | 3-4 | 1-1 | 5-5 |
+| mot | 2-9 | 9-9 | n/a | 3-3 | 4-1 |
+| sik | 7-7 | 3-3 | 5-5 | n/a | 0-3 |
+| kil | 3-2 | 4-4 | 6-7 | 0-0 | n/a |
+*/
+
+console.log('*****Begin friends league*****');
+
+const friendsList = ['ali', 'tin', 'mot', 'sik', 'kil'];
+
+const noOfRows = friendsList.length;
+const noOfColumns = friendsList.length;
+
+let leagueTable = [];
+
+for (let row = 0; row < noOfRows; row++) {
+    let rowTemp = [];
+    for (let column = 0; column < noOfColumns; column++) {
+        if (row == 0 && column == 0) {
+            rowTemp.push(' ');
+        }
+        else if (row == 0 && column > 0) {
+            rowTemp.push(friendsList[column]);
+        }
+        else if (row > 0 && column == 0) {
+            rowTemp.push(friendsList[row]);
+        }
+        else if (row == column) {
+            rowTemp.push('n/a');
+        }
+        else {
+            let scoreLeft = Math.floor(Math.random() * 3);
+            let scoreRight = Math.floor(Math.random() * 3);
+            let score = `${scoreLeft} - ${scoreRight}`;
+            rowTemp.push(score);
+        }
+    }
+    leagueTable.push(rowTemp);
+}
+
+
+console.table(leagueTable);
+
+/* Practice Scenario 12
+Given two arrays, one containing owners, and one containing cats. Assign the cats to their owners.
+
+Hints:
+
+You can detect if a string is part of another string by using the includes method
+
+E.g:
+
+const sentence = 'The quick brown joglade jumps over shakirah.';
+const word = 'joglade';
+
+console.log(sentence.includes(word));
+// output: true
+And you can remove the prefix from the cat names by using the split method.
+
+E.g:
+
+let ownersAndCats = 'shad_chobber'.split('_');
+console.log(ownersAndCats[0]); // output: shad
+console.log(ownersAndCats[1]); // output: chobber
+
+
+Expected result: array of objects in this form:
+
+const ownersWithCats = [
+    {
+        "name": "shad",
+        "cats": [
+            "chobber"
+        ]
+    },
+    {
+        "name": "shakirah",
+        "cats": [
+            "jogladae",
+            "jages",
+        ]
+    },
+    {
+        "name": "slizzard",
+        "cats": [
+            "noni"
+        ]
+    },
+    {
+        "name": "mok",
+        "cats": [
+            "tomenky"
+        ]
+    }
+];
+*/
+
+const cats = ['mok_tomenky', 'shakirah_jogladae', 'shakirah_jages', 'slizzard_noni', 'shad_chobber'];
+const owners = ['shakirah', 'slizzard', 'shad', 'mok'];
+let ownersWithCatsList = [];
+
+for (let i = 0; i < owners.length; i++) {
+
+    var ownerName = owners[i];
+    var hisCats = ['mini', 'mickey', 'donald'];
+
+    ownersWithCatsList.push({
+        name: ownerName,
+        cats: hisCats
+    })
+
+}
+console.log(ownersWithCatsList)
+
+for (let i = 0; i < cats.length; i++) {
+    if (cats[0].includes(owners[i])) {
+        ownersWithCatsList.cats += (cats[0] + owners[i])
+    }
+    if (cats[1].includes(owners[i])) {
+        ownersWithCatsList.cats += (cats[1] + owners[i])
+    } if (cats[2].includes(owners[i]))
+        console.log(cats[2] + owners[i])
+    if (cats[3].includes(owners[i])) {
+        console.log(cats[3] + owners[i])
+    }
+    if (cats[4].includes(owners[i])) {
+        console.log(cats[4] + owners[i])
+    }
+}
