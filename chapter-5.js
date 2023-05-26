@@ -441,9 +441,15 @@ const owners = ['shakirah', 'slizzard', 'shad', 'mok'];
 let ownersWithCatsList = [];
 
 for (let i = 0; i < owners.length; i++) {
+    let ownerName = owners[i];
+    let hisCats = [];
 
-    var ownerName = owners[i];
-    var hisCats = ['mini', 'mickey', 'donald'];
+    for (j = 0; j < cats.length; j++) {
+        if (cats[j].includes(owners[i])) {
+            let singleCatAndOwner = cats[j].split('_');
+            hisCats.push(singleCatAndOwner[1])
+        }
+    }
 
     ownersWithCatsList.push({
         name: ownerName,
@@ -451,20 +457,5 @@ for (let i = 0; i < owners.length; i++) {
     })
 
 }
-console.log(ownersWithCatsList)
 
-for (let i = 0; i < cats.length; i++) {
-    if (cats[0].includes(owners[i])) {
-        ownersWithCatsList.cats += (cats[0] + owners[i])
-    }
-    if (cats[1].includes(owners[i])) {
-        ownersWithCatsList.cats += (cats[1] + owners[i])
-    } if (cats[2].includes(owners[i]))
-        console.log(cats[2] + owners[i])
-    if (cats[3].includes(owners[i])) {
-        console.log(cats[3] + owners[i])
-    }
-    if (cats[4].includes(owners[i])) {
-        console.log(cats[4] + owners[i])
-    }
-}
+console.log(ownersWithCatsList);
