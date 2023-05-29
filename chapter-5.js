@@ -465,7 +465,7 @@ console.log(ownersWithCatsList);
 // let gridArray = 64;
 // let counterSet = 0;
 // let cellsCounter = [];
- 
+
 // if (cellsCounter % 8 == 0) {
 //     // if ()
 //     for (let i = 0; i < gridArray + 1; i++) {
@@ -477,15 +477,47 @@ console.log(ownersWithCatsList);
 
 //Practice 5.6
 console.log('----new practice begins----')
-let arrays =[];
+let arrays = [];
 console.log(arrays)
 
-for(let i = 0; i< 11; i++){
+for (let i = 0; i < 11; i++) {
     arrays.push(i)
 }
 
-for (let array of arrays){
+for (let array of arrays) {
     console.log(array)
 }
+
+//Practice 5.7
+console.log('----new practice begins----')
+
+let myAyla = {
+    name: 'Ayla Raisa',
+    age: 1,
+    favouriteColour: 'pink'
+}
+
+for (let info in myAyla) {
+    console.log(myAyla)
+}
+
+let myAylaRaisa = ['Ayla Raisa', 1, 'pink']
+for (let Ayla in myAylaRaisa) {
+    console.log(myAylaRaisa[Ayla])
+}
+
+//Practice 5.8
+console.log('----new practice begins----')
+
+let string = [];
+let skipThisNumber = 6;
+
+for (let i = 1; i < 11; i++) {
+    if (i !== skipThisNumber) {
+        string.push(i)
+    }
+}
+
+console.log(string)
 
 
