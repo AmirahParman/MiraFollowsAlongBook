@@ -459,3 +459,33 @@ for (let i = 0; i < owners.length; i++) {
 }
 
 console.log(ownersWithCatsList);
+
+// //Practice exercise 5.5 
+// console.log('----5.5 starts here----')
+// let gridArray = 64;
+// let counterSet = 0;
+// let cellsCounter = [];
+ 
+// if (cellsCounter % 8 == 0) {
+//     // if ()
+//     for (let i = 0; i < gridArray + 1; i++) {
+//         cellsCounter.push(i)
+//     }
+// }
+
+// console.table(cellsCounter)
+
+//Practice 5.6
+console.log('----new practice begins----')
+let arrays =[];
+console.log(arrays)
+
+for(let i = 0; i< 11; i++){
+    arrays.push(i)
+}
+
+for (let array of arrays){
+    console.log(array)
+}
+
+
